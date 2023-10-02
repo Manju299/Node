@@ -19,6 +19,10 @@ const currentOs = {
     release:os.release(),
     totalMem:os.totalmem(),
     freeMem:os.freemem(),
+    arch: os.arch(),
+    version: os.version(),
+    priority:os.getPriority(),
+    CPUS: os.cpus(),
 }
 
 console.log(currentOs)
