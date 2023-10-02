@@ -9,5 +9,9 @@
 // console.log("YOu now out of condition")
 
 const names = require('./modulename')
+const great = require('./2-moduleEnFunc');
+const SinglePerson = require('./2-alternative-flaour')
 
-console.log(names);
+console.log(SinglePerson.SinglePerson);
+console.log(SinglePerson.items)
+great(names.kumar);
