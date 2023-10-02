@@ -1,24 +1,12 @@
-//Built in modules : OS
-const os = require('os')
+//Path module 
+const path = require('path');
 
-const user = os.userInfo()
+console.log(path.delimiter);
+console.log(path.sep)
 
-//Info about current user
-console.log(user);
-
-//Info about the system uptime in seconds
-console.log(`The System uptime is ${os.uptime()} seconds`);
-const totalUpMinutes = os.uptime()/60;
-console.log(`Total Uptime in Minutes ${totalUpMinutes}`);
-console.log(`The total UpHours ${totalUpMinutes/60}`);
+const join = path.join('Constent','subfolder','text.txt');
+console.log(join);
 
 
-//Info about the Operating System
-const currentOs = {
-    name:os.type(),
-    release:os.release(),
-    totalMem:os.totalmem(),
-    freeMem:os.freemem(),
-}
-
-console.log(currentOs)
+const absolute = path.resolve(__dirname, join)
+console.log(absolute);
