@@ -1,0 +1,5 @@
+script - "start" : "node filename.js"  => we can user this to avoid to run every time node file.js file
+"dev" : nodemon filename.js   to run dev server
+
+install nodemon (dev dependecy)
+unintall npm unintall package name
