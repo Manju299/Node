@@ -1,9 +1,39 @@
+//Event loop exaple( Asynch)
+
+// const {readFile} = require('fs')
+// const { result } = require('lodash')
+
+// console.log("Starting first task")
+
+// readFile("./Content/first.txt",'utf-8',(err,result)=>{
+//     if(err){
+//         console.log(`Error occured! ${err}`);
+//     }
+//     console.log(result);
+//     console.log("Completed first task")
+// })  
+// console.log("Starting second task");
 
 
-const _ = require("lodash") 
+//Async example
 
-const number = [1,[2,[3,[4]]]]
-const newItem = _.flattenDeep(number)
+// console.log("First")
+// setTimeout(()=>{
+//     console.log("Second"),0
+// })
+// console.log("Third");
 
-console.log(newItem);
-console.log("Hello world");
+
+
+//Async example 2 HTTP
+
+const http = require("http")
+
+const server = http.createServer((req,res)=>{
+    console.log("request event")
+    res.end("Hello world")
+})
+
+server.listen(5000, ()=>{
+    console.log("Server is listening on port : 5000....")
+})
