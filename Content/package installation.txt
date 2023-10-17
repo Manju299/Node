@@ -4,6 +4,34 @@ script - "start" : "node filename.js"  => we can user this to avoid to run every
 install nodemon (dev dependecy)
 unintall npm unintall package name
 
+NPM installation 
+
+
+package.json
+npm init (step by Step)
+npm init - y (everything default)
+
+npm install ==> install external modules
+nom install -D <packagename> or npm install --save-dev <packagename> ===> for dev dependencies
+
+
+
+package.json
+ "dependencies": {
+    "lodash": "^4.17.21",
+    "nodemailer": "^6.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+
+
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  }, == to run /start project with diffent cammand  eg npm start will start node app.js
+
+  npr run dev will run nodemon app.js
 
 
 
